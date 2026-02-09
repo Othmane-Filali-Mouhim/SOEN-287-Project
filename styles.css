@@ -1,0 +1,122 @@
+body{
+    background-color: #d5ecfb;;
+    font-family: "Poppins", Sans-serif;
+    color:#a5a5a5;
+    
+}
+
+/* ===== Navbar ===== */
+.navbar{
+  padding: 16px 24px;    
+}
+.navbar ul{
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 16px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: larger;
+    
+}
+.navbar a{
+    color:#a5a5a5;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color:#0093F4;
+}
+
+.material-symbols-outlined {
+  font-size: 48px;
+  line-height: 1;          
+  display: inline-block;
+  color: #0093F4;
+}
+
+#title{
+    color: #0093F4;
+}
+
+.left{
+    display: flex;
+    gap: 8px;
+    margin-left: 0px;
+}
+.nav-links{
+  display: flex;
+  gap: 30px;
+  margin-right: 70px;   
+}
+.auth{
+  margin-left: auto;
+  display: flex;
+  gap: 12px;
+  margin-right: 10%;
+}
+#signBtn{
+    background-color: #0093F4;
+    font-size: 13px;
+    font-weight: 510;
+    line-height: 25px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #0093F4;
+    border-radius: 10px 10px 10px 10px;
+    padding: 11px 14px 11px 14px;
+    color: white;
+    text-decoration: none;
+}
+#signBtn:hover{
+    color: #0093F4;
+    background-color: white;
+}
+#loginBtn{
+    background-color: #DAECF7;
+    font-size: 13px;
+    font-weight: 510;
+    line-height: 25px;
+    fill: #0093F4;
+    color: #0093F4;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #0093F4;
+    border-radius: 10px 10px 10px 10px;
+    padding: 11px 14px 11px 14px;
+}
+#loginBtn:hover{
+color: white;
+background-color: #0093F4;
+}
+
+/* ===== Hero ===== */
+.hero{
+  padding: 34px 24px;  
+  display: flex;
+  column-gap: 20px;  
+   text-decoration: none 
+}
+.hero-left{
+   font-size: large;
+}
+.hero h1{
+    font-size: 55px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+.cta-btn{
+  background: #0093F4;
+  color: white;
+  padding: 11px 14px;
+  border: 1px solid #0093F4;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-btn:hover{
+  background: white;
+  color: #0093F4;
+}
+
