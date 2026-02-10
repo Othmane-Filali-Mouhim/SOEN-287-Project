@@ -9,17 +9,14 @@ body{
 .navbar{
   padding: 16px 24px;    
 }
-.navbar ul{
+.navbar ul {
     list-style: none;
-    padding-left: 10px;
-    padding-top: 16px;
     margin: 0;
+    padding: 16px 24px;
     display: flex;
     align-items: center;
-    gap: 20px;
-    font-size: larger;
-    
 }
+
 .navbar a{
     color:#a5a5a5;
     text-decoration: none;
@@ -39,21 +36,23 @@ body{
     color: #0093F4;
 }
 
-.left{
+.left {
+    flex: 1;
     display: flex;
     gap: 8px;
-    margin-left: 0px;
 }
-.nav-links{
-  display: flex;
-  gap: 30px;
-  margin-right: 70px;   
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;   
+    gap: 30px;
+    font-size: larger;
 }
-.auth{
-  margin-left: auto;
-  display: flex;
-  gap: 12px;
-  margin-right: 10%;
+.auth {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
 }
 #signBtn{
     background-color: #0093F4;
@@ -93,17 +92,27 @@ background-color: #0093F4;
 /* ===== Hero ===== */
 .hero{
   padding: 34px 24px;  
-  display: flex;
-  column-gap: 20px;  
-   text-decoration: none 
+  column-gap: 30px;  
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   min-height: 600px;
+   
+   background: linear-gradient(
+    180deg,
+    #d5ecfb 0%,
+    #f4faff 60%,
+    #ffffff 100%
+  );
 }
-.hero-left{
-   font-size: large;
-}
+
 .hero h1{
-    font-size: 55px;
+    font-size: 65px;
     font-weight: 600;
     color: #1a1a1a;
+}
+.hero p{
+    font-size: 30px;
 }
 .cta-btn{
   background: #0093F4;
@@ -113,6 +122,9 @@ background-color: #0093F4;
   border-radius: 10px;
   text-decoration: none;
   display: inline-block;
+  text-align: center; 
+    margin-top: 150px;
+    
 }
 
 .cta-btn:hover{
