@@ -1,7 +1,7 @@
 body{
-    background-color: #d5ecfb;;
+    background-color: #F5F9FF;
     font-family: "Poppins", Sans-serif;
-    color:#a5a5a5;
+    color:#6B7280;
     
 }
 /* ===== Navbar ===== */
@@ -18,11 +18,11 @@ body{
 }
 
 .navbar a{
-    color:#a5a5a5;
+    color:#6B7280;
     text-decoration: none;
 }
 .navbar a:hover{
-    color:#0093F4;
+    color:#2563EB;
 }
 
 .material-symbols-outlined {
@@ -38,7 +38,7 @@ body{
 }
 
 #title{
-    color: #0093F4;
+    color: #2563EB;
 }
 
 .left{ justify-self: start; display:flex; align-items:center; gap:8px; }
@@ -50,7 +50,7 @@ body{
 }
 .profile-icon {
     font-size: 36px;
-    color: #0093F4;
+    color: #2563EB;
 }
 .profile-dropdown {
     position: absolute;
@@ -72,7 +72,7 @@ body{
 
 .profile-dropdown a:hover {
     background: #f4faff;
-    color: #0093F4;
+    color: #2563EB;
 }
 
 
