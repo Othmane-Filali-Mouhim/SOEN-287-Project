@@ -90,6 +90,7 @@ body{
     border-radius: 10px 10px 10px 10px;
     padding: 11px 14px 11px 14px;
 }
+
 #loginBtn:hover{
 color: white;
 background-color: #0093F4;
@@ -295,9 +296,6 @@ background-color: #0093F4;
     font-size: 13px;
     color: #888;
 }
-
-
-
 
 
 
