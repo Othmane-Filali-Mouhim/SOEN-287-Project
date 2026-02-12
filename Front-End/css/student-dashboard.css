@@ -9,12 +9,12 @@
 
 .dashboard-header h1 {
     font-size: 36px;
-    color: #1a1a1a;
+    color: #111827;
     margin-bottom: 8px;
 }
 
 .dashboard-header p {
-    color: #777;
+    color: #6B7280;
 }
 
 .dashboard-cards {
@@ -27,7 +27,7 @@
 }
 
 .dashboard-card {
-    background: #f4faff;
+    background: #EFF6FF;
     padding: 30px 20px;
     border-radius: 16px;
     cursor: pointer;
@@ -35,18 +35,18 @@
 }
 
 .dashboard-card h3 {
-    color: #0093F4;
+    color: #2563EB;
     margin-bottom: 8px;
 }
 
 .dashboard-card p {
-    color: #555;
+    color: #4B5563;
     font-size: 15px;
 }
 
 .dashboard-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0, 147, 244, 0.15);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.18);
 }
 
 .dashboard-icon {
@@ -57,29 +57,29 @@
     margin-bottom: 16px;
     transition: transform 0.25s ease;
 }
+
 .icon-blue {
-    color: #0093F4;
-    background-color: #e6f2fb;
+    color: #2563EB;
+    background-color: #DBEAFE;
 }
 
 .icon-purple {
-    color: #6b6ee3;
-    background-color: #ececff;
+    color: #7C3AED;
+    background-color: #EDE9FE;
 }
 
 .icon-green {
-    color: #2fa36b;
-    background-color: #e9f7f0;
+    color: #059669;
+    background-color: #D1FAE5;
 }
+
 .dashboard-card:hover .dashboard-icon {
     transform: scale(1.1);
 }
 
 .dashboard-link {
     text-decoration: none;
-    
 }
-
 
 .dashboard-table {
     background: #ffffff;
@@ -91,17 +91,16 @@
     display: grid;
     grid-template-columns: 1.2fr 1.4fr 1fr 1fr;
     padding: 14px 20px;
-    border-bottom: 1px solid #f0f0f0;
-    color: #555;
+    border-bottom: 1px solid #E5E7EB;
+    color: #4B5563;
 }
 
 .dashboard-header-row {
-    background: #f4faff;
+    background: #EFF6FF;
     font-weight: 600;
-    color: #0093F4;
+    color: #2563EB;
 }
 
 .dashboard-row:last-child {
     border-bottom: none;
 }
-
