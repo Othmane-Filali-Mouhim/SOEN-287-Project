@@ -14,6 +14,7 @@ body{
     padding: 16px 24px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .navbar a{
@@ -41,57 +42,44 @@ body{
 }
 
 .left {
-    flex: 1;
+    
     display: flex;
     gap: 8px;
 }
-.nav-links {
-    flex: 1;
-    display: flex;
-    justify-content: center;   
-    gap: 30px;
-    font-size: larger;
+
+
+.profile-menu {
+    position: relative;
+    cursor: pointer;
 }
-.auth {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
+.profile-icon {
+    font-size: 36px;
+    color: #0093F4;
 }
-#signBtn{
-    background-color: #0093F4;
-    font-size: 13px;
-    font-weight: 510;
-    line-height: 25px;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: #0093F4;
-    border-radius: 10px 10px 10px 10px;
-    padding: 11px 14px 11px 14px;
-    color: white;
+.profile-dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 10px 0;
+    width: 150px;
+    flex-direction: column;
+}
+.profile-dropdown a {
+    padding: 10px 16px;
     text-decoration: none;
+    color: #555;
+    display: block;
 }
-#signBtn:hover{
+
+.profile-dropdown a:hover {
+    background: #f4faff;
     color: #0093F4;
-    background-color: white;
 }
-#loginBtn{
-    background-color: #DAECF7;
-    font-size: 13px;
-    font-weight: 510;
-    line-height: 25px;
-    fill: #0093F4;
-    color: #0093F4;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: #0093F4;
-    border-radius: 10px 10px 10px 10px;
-    padding: 11px 14px 11px 14px;
-}
-#loginBtn:hover{
-color: white;
-background-color: #0093F4;
-}
+
+
 /* ===== Student Dashboard ===== */
 /* ===== Student Dashboard ===== */
 .dashboard-header {
