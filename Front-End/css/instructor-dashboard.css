@@ -64,7 +64,10 @@ body{
     padding: 10px 0;
     width: 150px;
     flex-direction: column;
+    display: none;
 }
+
+.profile-dropdown.open { display: block; }
 .profile-dropdown a {
     padding: 10px 16px;
     text-decoration: none;

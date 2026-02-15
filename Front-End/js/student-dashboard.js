@@ -1,5 +1,17 @@
-const profileMenu = document.getElementById("drop-down-menu");
+// for profile menu dropdown.
+const menu = document.querySelector(".profile-menu");
+const dropdown = document.querySelector(".profile-dropdown");
 
-profileMenu.addEventListener("click",e){
-    
-}
+menu.addEventListener("click", (e) => {
+  dropdown.classList.toggle("open");
+  e.stopPropagation();
+});
+
+document.addEventListener('click', (e) =>{
+
+    if(!menu.contains(e.target)){
+        dropdown.classList.remove("open");
+    }
+
+});
+
