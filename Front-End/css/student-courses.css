@@ -101,14 +101,54 @@ body{
     background: #007ad1;
 }
 /* ===== add course form ===== */
-/* .hidden { display: none; } */
+
 
 .form-popup{
     display: flex;
     align-items: center;
     justify-content: center;
+   position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+    padding: 20px;
+}
+.hidden { display: none; }
+.form-card{
+     background: #fff;
+  width: min(480px, 94vw);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+
 }
 
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.course-form label {
+  display: block;
+  margin: 12px 0;
+  color: #374151;
+  font-size: 14px;
+}
+.course-form input,
+.course-form select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
 
 
 

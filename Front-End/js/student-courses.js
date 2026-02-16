@@ -15,4 +15,20 @@ document.addEventListener('click', (e) =>{
 
 });
 
-// 
+// for add course popmenu
+const addCourseBtn = document.querySelector(".primary-btn")
+const popup = document.getElementById("courseFormPopup");
+const closeBtn = document.getElementById("closeCourseForm");
+const cancelBtn = document.getElementById("cancelCourseForm");
+
+function openForm() {
+  popup.classList.remove("hidden");
+}
+function closeForm(){
+    popup.classList.add("hidden");
+}
+
+
+addCourseBtn.addEventListener('click',openForm);
+closeBtn.addEventListener('click',closeForm);
+cancelBtn.addEventListener('click',closeForm);
