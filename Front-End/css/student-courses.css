@@ -100,5 +100,17 @@ body{
 .primary-btn:hover {
     background: #007ad1;
 }
+/* ===== add course form ===== */
+/* .hidden { display: none; } */
+
+.form-popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 
 

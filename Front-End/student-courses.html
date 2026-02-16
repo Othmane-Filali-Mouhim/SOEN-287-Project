@@ -40,6 +40,50 @@
         <h1>Your Courses</h1>
         <button class="primary-btn" id="addCourseBtn">+ Add Course</button>
     </section>
+    
+    <!-- Add Course form -->
+<div id="courseFormPopup" class="form-popup hidden">
+  <div class="form-card">
+    <div class="form-header">
+      <h2>Add a Course</h2>
+      <button type="button" id="closeCourseForm" class="icon-btn">✕</button>
+    </div>
+
+    <form id="addCourseForm" class="course-form">
+      <label>
+        Course Code
+        <input name="code" type="text" placeholder="SOEN 287" required />
+      </label>
+
+      <label>
+        Course Name
+        <input name="name" type="text" placeholder="Web Programming" required />
+      </label>
+
+      <label>
+        Instructor
+        <input name="instructor" type="text" placeholder="Dr. Smith" required />
+      </label>
+
+      <label>
+        Term
+        <select name="term" required>
+          <option value="">Select a term…</option>
+          <option>Winter 2026</option>
+          <option>Summer 2026</option>
+          <option>Fall 2026</option>
+        </select>
+      </label>
+
+      <div class="form-actions">
+        <button type="button" id="cancelCourseForm" class="secondary-btn">Cancel</button>
+        <button type="submit" class="primary-btn">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
 
     <script src="js/student-courses.js"></script>
 </body>
