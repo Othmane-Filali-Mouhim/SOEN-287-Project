@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/faq.css"/>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li class="left"><a href="index.html"><span class="material-symbols-outlined">
+                school</span></a>
+            <a href="index.html" id="title"><h3>CourseMate</h4></a></li>
+            
+            <li class="nav-links">
+                <a href="index.html" id="homeBtn">Home</a>
+                <a href="#features-section" id="featuresBtn">Features</a>
+                <a href="" id="aboutBtn">About</a>
+            </li>
+            
+            <li class="auth">
+                <a href="" id="signBtn">Sign up</a>
+                <a href="" id="loginBtn">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+<section class="features faq-section">
+    <span class="section-label">FAQ</span>
+    <h2>Frequently Asked Questions</h2>
+    <p class="features-subtitle">Learn more about this CourseMate demo project.</p>
+
+    <div class="wrapper" style="max-width: 800px; margin: 0 auto;">
+        
+        <!-- General Questions -->
+        <h3 style="color: #0093F4; text-align: left; margin-top: 2rem;">📌 General</h3>
+        
+        <div class="faq">
+            <input type="checkbox" id="faq-general-1" hidden>
+            <label for="faq-general-1" class="accordion">
+                What is CourseMate?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>CourseMate is a static front‑end demo created for a Concordia University SOEN project. It showcases a concept for a course and grade management tool with multiple pages for both students and instructors.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-general-2" hidden>
+            <label for="faq-general-2" class="accordion">
+                Can I actually add courses, submit assignments, or save grades?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>No – this is a front‑end only demo. There is no backend or database, so all buttons and forms are visual placeholders. The pages demonstrate the layout and design, not real functionality.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-general-3" hidden>
+            <label for="faq-general-3" class="accordion">
+                What pages are included in this demo?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p><strong>Student pages:</strong> Dashboard, Courses, Assessments, Grades<br>
+                <strong>Instructor pages:</strong> Dashboard, Course Management, Assessment Management, Analytics</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-general-4" hidden>
+            <label for="faq-general-4" class="accordion">
+                How do I navigate between pages?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>Use the navigation bar at the top, or click on the cards in the dashboards. For example, from the student dashboard, clicking "Courses" takes you to the student courses page.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-general-5" hidden>
+            <label for="faq-general-5" class="accordion">
+                Are the grades, averages, and charts real?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>No – all numbers and charts are static examples. They are meant to show what the final product might look like.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-general-6" hidden>
+            <label for="faq-general-6" class="accordion">
+                How can I provide feedback or ask questions about the demo?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>You can email the team at <a href="mailto:coursemate.demo@concordia.ca"><strong>coursemate.demo@concordia.ca</strong></a> or use the "Contact Us" link in the footer.</p>
+            </div>
+        </div>
+
+        <!-- Student‑Focused Questions -->
+        <h3 style="color: #0093F4; text-align: left; margin-top: 2rem;">👨‍🎓 Student</h3>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-student-1" hidden>
+            <label for="faq-student-1" class="accordion">
+                What can I see on the student dashboard?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>The student dashboard shows a welcome message, cards linking to Courses, Assessments, and Grades, plus a table of upcoming assessments with sample data.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-student-2" hidden>
+            <label for="faq-student-2" class="accordion">
+                What’s on the student courses page?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>It displays a list of your enrolled courses and has an "Add Course" button.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-student-3" hidden>
+            <label for="faq-student-3" class="accordion">
+                What does the assessments page show?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>It lists upcoming assessments for your courses.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-student-4" hidden>
+            <label for="faq-student-4" class="accordion">
+                What’s on the grades page?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>It shows your grades for each assessment.</p>
+            </div>
+        </div>
+
+        <!-- Instructor‑Focused Questions -->
+        <h3 style="color: #0093F4; text-align: left; margin-top: 2rem;">👨‍🏫 Instructor</h3>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-instructor-1" hidden>
+            <label for="faq-instructor-1" class="accordion">
+                What can I see on the instructor dashboard?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>The instructor dashboard has cards linking to Course Management, Assessment Management, and Monitoring & Analytics pages.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-instructor-2" hidden>
+            <label for="faq-instructor-2" class="accordion">
+                What’s on the instructor courses page?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>It shows a list of courses you teach and may have options to edit.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-instructor-3" hidden>
+            <label for="faq-instructor-3" class="accordion">
+                What does the instructor assessment page display?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>It lists assessments you've created.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="faq-instructor-4" hidden>
+            <label for="faq-instructor-4" class="accordion">
+                What’s in the analytics page?
+                <i class="material-symbols-outlined">expand_more</i>
+            </label>
+            <div class="pannel">
+                <p>It contains placeholder charts and statistics about student performance.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+</body>
