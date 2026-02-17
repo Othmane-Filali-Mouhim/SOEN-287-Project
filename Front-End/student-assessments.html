@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+
     <nav class="navbar">
         <ul>
             <li class="left"><a href="student-dashboard.html"><span class="material-symbols-outlined">
@@ -37,14 +39,123 @@
         </ul>
     </nav>
 
-    <section class="page-header">
-        <h1>Your Assessments</h1>
-        <p>Upcoming evaluations for your enrolled courses.</p>
-    </section>
+    <main class="container">
 
-    <section class="assessments-grid" id="assessmentsContainer">
-    </section>
+        <!-- Header -->
+        <section class="course-head">
+            <div>
+                <h1 class="page-title" id="courseTitle">Course Title</h1>
+            </div>
 
+            <div class="course-head-actions">
+
+                <!-- add btn -->
+                <button class="primary-btn" id="btnAddAssessment">+ Add Assessment</button>
+
+            </div>
+        </section>
+
+
+        <section class="stats-grid stats-grid-2">
+            <div class="card stat-card">
+                <p class="stat-label">Current Average</p>
+                <h2 class="stat-value" id="avgValue">--%</h2>
+                <p class="stat-hint">Based on entered grades.</p>
+            </div>
+
+            <div class="card stat-card">
+                <p class="stat-label">Progress</p>
+                <div class="progress">
+                    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+                </div>
+                <p class="stat-hint">
+                    <span class="stat-strong" id="progressText">0/0</span> assessments completed
+                </p>
+            </div>
+        </section>
+
+
+
+
+        <section class="card">
+            <div class="card-head">
+                <div>
+                    <h2 class="card-title">Assessments & Grades</h2>
+                    <p class="card-subtitle">Enter earned/total marks and mark items as completed.</p>
+                </div>
+
+                <div class="table-actions">
+
+                    <!-- EDIT BTN -->
+
+                    <button class="primary-btn" id="btnEditAssessment">Edit Assessment & Grades</button>
+
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Due</th>
+                            <th>Grade%</th>
+                            <th>Weight%</th>
+                            <th class="right">Status</th>
+                        </tr>
+                    </thead>
+
+
+
+                    <tbody id="assessmentRows"></tbody>
+                </table>
+            </div>
+        </section>
+ </main>
+        <!-- form popup BTN -->
+        <div id="assessmentFormPopup" class="form-popup hidden">
+            <div class="form-card">
+                <h3>Add assessment</h3>
+                <form id="btnAddAssessmentForm" class="Assessment-form">
+                    <label>
+                        Name
+                        <input type="text" placeholder="SOEN 287" required />
+                    </label>
+
+                    <label>
+                        Due
+                        <input type="date" placeholder="yyyy/mm/dd" required />
+                    </label>
+
+                    <label>
+                        Grade%
+                        <input type="text" placeholder="0" required />
+                    </label>
+
+                    <label>
+                        Weight%
+                        <input type="text" placeholder="20" required />
+                    </label>
+
+                    <label>
+                        Status
+                        <select name="term" required>
+                            <option value="">Select a term…</option>
+                            <option>Pending</option>
+                            <option>Completed</option>
+                        </select>
+                    </label>
+
+                    <div class="form-actions">
+                        <button type="button" id="cancelCourseForm" class="secondary-btn">Cancel</button>
+                        <button type="submit" class="primary-btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+   
+    <script src="js/data.js"></script>
     <script src="js/student-assessment.js"></script>
 
 </body>
