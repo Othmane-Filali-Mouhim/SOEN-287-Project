@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <nav class="navbar">
+    <ul>
+      <li class="left">
+        <a href="index.html">
+          <span class="material-symbols-outlined">school</span>
+        </a>
+        <a href="index.html" id="title"><h3>CourseMate</h3></a>
+      </li>
+
+      <li class="nav-links">
+        <a href="index.html" id="homeBtn">Home</a>
+        <a href="index.html#features-section" id="featuresBtn">Features</a>
+        <a href="about.html" id="aboutBtn">About</a>
+      </li>
+
+      <li class="auth">
+        <a href="signup.html" id="signBtn">Sign up</a>
+        <a href="login.html" id="loginBtn">Login</a>
+      </li>
+    </ul>
+  </nav>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <main class="signup-page">
+
+    <section class="signup-box">
+
+      <div class="signup-header">
+        <span class="material-symbols-outlined signup-icon">person_add</span>
+        <h1>Create your account</h1>
+        <p>Choose your role and enter your information.</p>
+      </div>
+
+      <form class="signup-form">
+
+        <div class="role-choice">
+          <label class="role-option">
+            <input type="radio" name="role" value="student" checked>
+            Student
+          </label>
+
+          <label class="role-option">
+            <input type="radio" name="role" value="instructor" checked>
+            Instructor
+          </label>
+        </div>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="First and Last name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="username@gmail.com" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="********" minlength="6" required>
+
+        <button class="signup-btn" type="submit">Create Account</button>
+
+        <p class="signup-footer-text">
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-links">
+        <h4>Student</h4>
+        <a href="">Dashboard</a>
+        <a href="">Courses</a>
+        <a href="">Assessments</a>
+        <a href="">Progress</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Instructor</h4>
+        <a href="">Dashboard</a>
+        <a href="">Manage Courses</a>
+        <a href="">Create Assessments</a>
+        <a href="">Grades</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Support</h4>
+        <a href="">FAQ</a>
+        <a href="">Contact Us</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 CourseMate · Academic project for Concordia University
+    </div>
+  </footer>
+
+</body>
+</html>
