@@ -1,103 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8"/> <!--allows us to use special characters -->
-        <title>Login</title>
-        <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> <!--allows us to use icons like : school,lock.etc. from Google's Material Symbols library -->
-        <link rel="stylesheet" href="css/styles.css"> <!--connects this HTML file to our styles CSS file -->
-        <link rel="stylesheet" href="css/login.css"> <!--connects this HTML file to our login CSS file -->
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li class="left"> <!-- left section of the navbar -->
-                    <a href="index.html"> <!--clicking on this link sends the user to index.html -->
-                        <span class="material-symbols-outlined"> <!--the word inside (school) determines the icon shown from the Material Symbols library -->
-                            school
-                        </span>
-                    </a>
-                    <a href="index.html" id="title">
-                        <h3>CourseMate</h3>
-                    </a>
-                </li>
 
-                 
-                
-                <li class="auth"> <!--right section of navbar: authentification buttons -->
-                    <a href="" id="signBtn">Sign up</a> <!-- sign up button -->
-                    <a href="login.html" id="loginBtn">Login</a>
-                </li>
-            </ul>         
-        </nav> <!--main content -->
+<head>
+    <meta charset="UTF-8" /> <!--allows us to use special characters -->
+    <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <!--allows us to use icons like : school,lock.etc. from Google's Material Symbols library -->
+    <link rel="stylesheet" href="css/styles.css"> <!--connects this HTML file to our styles CSS file -->
+    <link rel="stylesheet" href="css/login.css"> <!--connects this HTML file to our login CSS file -->
+</head>
 
-        <main class="auth-page"> <!--main class -->
-            <section class="auth-card"> <!--login card container, it'll become the login box -->
-                <div class="auth-header"> <!-- autsh header, icon, title, short descrpt -->
-                    <span class="material-symbols-outlined auth-icon">
-                        lock
-                     </span>  <!-- lock icon -->
-                    <h1>Welcome back !</h1>
-                    <p> Log in to access your dashboard.</p>
-                </div> 
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="left"> <!-- left section of the navbar -->
+                <a href="index.html"> <!--clicking on this link sends the user to index.html -->
+                    <span class="material-symbols-outlined">
+                        <!--the word inside (school) determines the icon shown from the Material Symbols library -->
+                        school
+                    </span>
+                </a>
+                <a href="index.html" id="title">
+                    <h3>CourseMate</h3>
+                </a>
+            </li>
 
-                <form class="auth-form"> <!-- this is where our login data gets submitted later with backend-->
-                    <label for="email">Email</label>
-                    <input 
-                        type="email" 
-                        id="email"
-                        placeholder="username@gmail.com"
-                        required
-                    />  <!-- for="email" needs to match the input id="email"--> 
-                        <!-- placeholder = example txt inside the box-->
-                        <!--required doesnt allow to submit id if form is empty-->
 
-                    <label for="password">Password</label> <!-- for="password" needs to match input id="password"-->
-                        <input
-                            id="password"
-                            type="password"
-                            placeholder="********"
-                            required
-                        /> <!-- type"password" hides the characters -->
-                           <!-- required doesnt allow to submit id the form is empty-->
 
-                     <div class="auth-row"> <!-- checkboc and txt togethercause they do the same thing-->
-                        <label class="show-pass">
-                            <input type="checkbox">
-                            Show Password
-                        </label> <!-- won't work for now, JavaScript later -->                                                                             
-                        <label class="remember">
-                            <input type="checkbox">
-                            Remember me     
-                        </label> <!-- Remember me keeps user logged in after they exit-->    
-                    </div>
-                    <div>
-                        <a class="forgot" href="">Forgot password ?</a> <!-- link for frgt password-->
-                    </div>    
+            <li class="auth"> <!--right section of navbar: authentification buttons -->
+                <a href="signup.html" id="signBtn">Sign up</a> <!-- sign up button -->
+                <a href="login.html" id="loginBtn">Login</a>
+            </li>
+        </ul>
+    </nav> <!--main content -->
 
-                    <button class="auth-btn" type="submit">Login</button> <!-- type="submit" means submit the form, if the user presses enter-->
-                        
-                    <p class="auth-footer">
-                        Don't have an account?
-                        <a href="">Sign up</a> 
-                    </p>    
-                </form>
+    <main class="auth-page"> <!--main class -->
+        <section class="auth-card"> <!--login card container, it'll become the login box -->
+            <div class="auth-header"> <!-- autsh header, icon, title, short descrpt -->
+                <span class="material-symbols-outlined auth-icon">
+                    lock
+                </span> <!-- lock icon -->
+                <h1>Welcome back !</h1>
+                <p> Log in to access your dashboard.</p>
+            </div>
 
-            </section>  
-        </main>
+
+
+
+
+
+            <form class="auth-form" id="loginForm">
+                <!-- this is where our login data gets submitted later with backend-->
+                <div class="role-choice">
+                    <label class="role-option">
+                        <input type="radio" name="role" value="student" checked>
+                        Student
+                    </label>
+
+                    <label class="role-option">
+                        <input type="radio" name="role" value="instructor">
+                        Instructor
+                    </label>
+                </div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="username@gmail.com" required />
+                <!-- for="email" needs to match the input id="email"-->
+                <!-- placeholder = example txt inside the box-->
+                <!--required doesnt allow to submit id if form is empty-->
+
+                <label for="password">Password</label> <!-- for="password" needs to match input id="password"-->
+                <input id="password" type="password" placeholder="********" required />
+                <!-- type"password" hides the characters -->
+                <!-- required doesnt allow to submit id the form is empty-->
+
+                <div class="auth-row"> <!-- checkboc and txt togethercause they do the same thing-->
+                    <label class="show-pass">
+                        <input type="checkbox">
+                        Show Password
+                    </label> <!-- won't work for now, JavaScript later -->
+                    <label class="remember">
+                        <input type="checkbox">
+                        Remember me
+                    </label> <!-- Remember me keeps user logged in after they exit-->
+                </div>
+                <div>
+                    <a class="forgot" href="">Forgot password ?</a> <!-- link for frgt password-->
+                </div>
+
+                <button class="auth-btn" type="submit">Login</button>
+                <!-- type="submit" means submit the form, if the user presses enter-->
+
+                <p class="auth-footer">
+                    Don't have an account?
+                    <a href="">Sign up</a>
+                </p>
+            </form>
+
+        </section>
+    </main>
 
     <!-- footer code by FM -->
-        <footer class="footer">
-            <div class="footer-container">
-              
-            </div>
+    <footer class="footer">
+        <div class="footer-container">
 
-            <div class="footer-bottom">
-                © 2026 CourseMate · Academic project for Concordia University
-            </div>
-        </footer>
-        
+        </div>
 
-     </body>
+        <div class="footer-bottom">
+            © 2026 CourseMate · Academic project for Concordia University
+        </div>
+    </footer>
+    <script src="js/login.js"></script>
+
+</body>
+
 </html>

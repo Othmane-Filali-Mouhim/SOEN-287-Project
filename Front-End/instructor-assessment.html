@@ -31,13 +31,53 @@
                 </span>
 
                 <div class="profile-dropdown">
-                    <a href="#">Profile</a>
-                    <a href="#">Logout</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="index.html">Logout</a>
                 </div>
             </li>
         </ul>
     </nav>
-    <h3>List of assessment</h3>
+    
+
+    <section class="page-header">
+  <h1>Assessment Structure</h1>
+  <button class="primary-btn" id="addCategoryBtn">
+    <span class="material-symbols-outlined">add</span>
+    Add Category
+  </button>
+</section>
+
+<section class="categories-list" id="categoriesList">
+  <!-- Categories appear here -->
+</section>
+
+<section class="weight-summary">
+  <h3>Total Weight: <span id="totalWeight">0</span>%</h3>
+  <p id="weightWarning"></p>
+</section>
+
+<!-- Modal -->
+<div class="modal hidden" id="categoryModal">
+  <div class="modal-card">
+    <h2 id="modalTitle">Add Category</h2>
+
+    <form id="categoryForm">
+      <input type="hidden" id="editCategoryId">
+
+      <label>Category Name</label>
+      <input type="text" id="categoryNameInput" required>
+
+      <label>Weight (%)</label>
+      <input type="number" id="categoryWeightInput" required min="0" max="100">
+
+      <div class="modal-actions">
+        <button type="button" id="cancelBtn">Cancel</button>
+        <button type="submit">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="js/data.js"></script>
     <script src="js/instructor-assessment.js"></script>
 </body>
 
