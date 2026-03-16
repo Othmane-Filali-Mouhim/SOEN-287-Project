@@ -65,7 +65,7 @@ const weightInput = formInputs[3];
 let editingId = "";
 
 // Helpers
-function formatISODate(iso) {
+function formatDate(iso) {
   if (!iso) return "—";
   const d = new Date(iso + "T00:00:00");
   if (Number.isNaN(d.getTime())) return iso;
@@ -154,7 +154,7 @@ function renderTable() {
     html += `
       <tr data-id="${a.id}" class="${rowClass}">
         <td>${a.name}</td>
-        <td>${formatISODate(a.due)}</td>
+        <td>${formatDate(a.due)}</td>
         <td>${gradeText}</td>
         <td>${weightText}</td>
         <td class="right">
