@@ -50,17 +50,7 @@
 
             <form class="auth-form" id="loginForm">
                 <!-- this is where our login data gets submitted later with backend-->
-                <div class="role-choice">
-                    <label class="role-option">
-                        <input type="radio" name="role" value="student" checked>
-                        Student
-                    </label>
-
-                    <label class="role-option">
-                        <input type="radio" name="role" value="instructor">
-                        Instructor
-                    </label>
-                </div>
+                
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="username@gmail.com" required />
                 <!-- for="email" needs to match the input id="email"-->
@@ -72,26 +62,20 @@
                 <!-- type"password" hides the characters -->
                 <!-- required doesnt allow to submit id the form is empty-->
 
-                <div class="auth-row"> <!-- checkboc and txt togethercause they do the same thing-->
-                    <label class="show-pass">
-                        <input type="checkbox">
-                        Show Password
-                    </label> <!-- won't work for now, JavaScript later -->
-                    <label class="remember">
-                        <input type="checkbox">
-                        Remember me
-                    </label> <!-- Remember me keeps user logged in after they exit-->
-                </div>
+            
                 <div>
                     <a class="forgot" href="">Forgot password ?</a> <!-- link for frgt password-->
                 </div>
 
+                <p id="error-message" style="color: red; display: none;"></p>
                 <button class="auth-btn" type="submit">Login</button>
                 <!-- type="submit" means submit the form, if the user presses enter-->
 
+               
+
                 <p class="auth-footer">
                     Don't have an account?
-                    <a href="">Sign up</a>
+                    <a href="signup.html">Sign up</a>
                 </p>
             </form>
 
